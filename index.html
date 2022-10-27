@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ABC com</title>
+		<meta charset="utf-8">
+
+		<style>
+			body {
+				background-color: #ccc;
+			}
+
+			.phone {
+				width: 504px;
+				height: 100%;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background: url(./phone_bg/phone_bg.png) no-repeat;
+			}
+
+			.phone::after {
+				content: '';
+				display: block;
+				width: 158px;
+				height: 30px;
+				position: absolute;
+				left: 50%;
+				top: 35px;
+				transform: translate(-50%, -50%);
+				background: url(./phone_bg/phone_top.png) no-repeat;
+				z-index: 10;
+			}
+
+			.content {
+				width: 303px;
+				height: 655px;
+				position: absolute;
+				left: 50.395%;
+				top: 24.5px;
+				transform: translateX(-50%);
+				background-color: #fff;
+				border-radius: 50px;
+				z-index: -10;
+			}
+			
+			iframe {
+				width: 100%;
+				height: 100%;
+				border-radius: 50px;
+			}
+		</style>
+	</head>
+<body>
+	
+	
+	<div class="phone">	
+		<div class="content">
+			<iframe src="./mobile/index.html" frameborder="0"></iframe>
+		</div>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<script>
+	var ratio = window.devicePixelRatio;
+	console.log(ratio);
+
+	if(ratio >= 2) {
+		// document.querySelector('.pc').style.display = 'none';
+		location.href = './mobile/index.html'
+	}else {
+		// document.querySelector('.mobile').style.display = 'none';
+	}
+
+	// if (Modernizr.touchevents) {
+	// 	document.querySelector('.pc').style.display = 'none';
+	// 	console.log(location.href);
+	// 	location.href = './mobile/index.html'
+	// } else {
+	// 	document.querySelector('.mobile').style.display = 'none';
+	// 	console.log(location.href);
+	// }
+</script>
+
+</body>
+</html>

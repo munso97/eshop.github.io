@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cart - Eshop</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="./js/main.js"></script>
+
+</head>
+
+<body>
+	<div class="front cart-page uppercase">
+		<div class="header home_header">
+			<a href="./home.html" class="sprite close">close</a>
+			<h2 class="heading5">My Cart</h2>
+		</div>
+
+		<div class="home_content">
+			<form action="./checkout.html">
+				<div class="cart_content">
+					<h3><span>4 items</span> in your cart</h3>
+					<ul class="cart_list">	
+						<li>
+							<img src="./images/cart_item_01.jpg" alt="cart_item_01_img">
+							<div class="cart_list_info">
+								<h4>LONG DRESS WITH SLITS</h4>
+								<h5 class="unit_price">$ 89.00</h5>
+								<div class="size">
+									<label for="size">size</label>
+									<select name="size" id="size">
+										<option value="xs">XS</option>
+										<option value="s">S</option>
+										<option value="m">M</option>
+										<option value="l">L</option>
+										<option value="xl">XL</option>
+									</select>
+								</div>
+								<div class="qty">
+									<label for="qty"> Quantity</label>
+									<input type="number" min="1" value="1" id="quantity">
+								</div>
+							</div>
+							<span class="sprite cart_item_del">Delete cart item</span>
+						</li>
+
+						<li>
+							<img src="./images/cart_item_02.jpg" alt="cart_item_02_img">
+							<div class="cart_list_info">
+								<h4>LONG DRESS WITH SLITS</h4>
+								<h5 class="unit_price">$ 25.00</h5>
+								<div class="size">
+									<label for="size">size</label>
+									<select name="size" id="size">
+										<option value="xs">XS</option>
+										<option value="s">S</option>
+										<option value="m">M</option>
+										<option value="l">L</option>
+										<option value="xl">XL</option>
+									</select>
+								</div>
+								<div class="qty">
+									<label for="qty"> Quantity</label>
+									<input type="number" min="1" value="1" id="quantity">
+								</div>
+							</div>
+							<span class="sprite cart_item_del">Delete cart item</span>
+						</li>
+
+						<li>
+							<img src="./images/cart_item_03.jpg" alt="cart_item_03_img">
+							<div class="cart_list_info">
+								<h4>LONG DRESS WITH SLITS</h4>
+								<h5 class="unit_price">$ 67.00</h5>
+								<div class="size">
+									<label for="size">size</label>
+									<select name="size" id="size">
+										<option value="xs">XS</option>
+										<option value="s">S</option>
+										<option value="m">M</option>
+										<option value="l">L</option>
+										<option value="xl">XL</option>
+									</select>
+								</div>
+								<div class="qty">
+									<label for="qty"> Quantity</label>
+									<input type="number" min="1" value="1" id="quantity">
+								</div>
+							</div>
+							<span class="sprite cart_item_del">Delete cart item</span>
+						</li>
+
+						<li>
+							<img src="./images/cart_item_04.jpg" alt="cart_item_04_img">
+							<div class="cart_list_info">
+								<h4>LONG DRESS WITH SLITS</h4>
+								<h5 class="unit_price">$ 100.00</h5>
+								<div class="size">
+									<label for="size">size</label>
+									<select name="size" id="size">
+										<option value="xs">XS</option>
+										<option value="s">S</option>
+										<option value="m">M</option>
+										<option value="l">L</option>
+										<option value="xl">XL</option>
+									</select>
+								</div>
+								<div class="qty">
+									<label for="qty"> Quantity</label>
+									<input type="number" min="1" value="1" id="quantity">
+								</div>
+							</div>
+							<span class="sprite cart_item_del">Delete cart item</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="cart_total">
+					<div class="shipping">
+						<h6>Shipping cost</h6>
+						<span class="price">$ 59.00</span>
+					</div>
+					<div class="total_price">
+						<h6> TOTAL Price</h6>
+						<span class="price">$ 899.00</span>
+					</div>
+				</div>
+
+				<button class="btn big">Check out</button>
+			</form>
+
+		</div>
+	</div>
+</body>
+
+</html>

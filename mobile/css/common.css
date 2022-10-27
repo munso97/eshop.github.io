@@ -1,0 +1,162 @@
+/* COLOR */
+:root {
+	--color-main: #262628;
+	--color-orange: #F05522;
+	--color-black: #000;
+	--color-white: #fff;
+	--color-whitegrey: #C2C4CA;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: 'SF UI Display Light';
+	font-size: 15px;
+	color: #4A4A4A;
+}
+
+.heading1 {
+	font-family: 'SF UI Display Heavy';
+	font-size: 36px;
+	letter-spacing: 0.29px;
+}
+.heading2 {
+	font-family: 'SF UI Display bold';
+	font-size: 26px;
+	letter-spacing: 0.21px;
+}
+.heading3 {
+	font-family: 'SF UI Display Heavy';
+	font-size: 24px;
+	letter-spacing: 0.19px;
+}
+.heading4 {
+	font-family: 'SF UI Display Heavy';
+	font-size: 20px;
+}
+.heading5 {
+	font-family: 'SF UI Display Semibold';
+	font-size: 20px;
+}
+.heading6 {
+	font-family: 'SF UI Display Semibold';
+	font-size: 14px;
+	letter-spacing: 0.11px;
+}
+
+/* ------------- SMAILL PADDING ------------- */
+.sm_padding {
+	padding: 0 17px;
+}
+
+/* ------------- 화면에 감추기 ------------- */
+.hidden {
+	position: fixed;
+	top: 0;
+	left: -9999px;
+	overflow: hidden;
+}
+
+/* ------------- Link & Button ------------- */
+.btn {
+	border: none;
+	text-align: center;
+	color: var(--color-white);
+	background-color: var(--color-main);
+	text-transform: uppercase;
+	font-family: 'SF UI Display Medium';
+	letter-spacing: 0.11px;
+	cursor: pointer;
+}
+.big {
+	line-height: 50px;
+	font-size: 14px;
+	font-family: 'SF UI Display Semibold';
+}
+.default {
+	line-height: 38px;
+	font-size: 13px;
+}
+.small {
+	line-height: 30px;
+	font-size: 13px;
+}
+
+p {
+	line-height: 18px;
+}
+
+/* ------------- ICON ------------- */
+.sprite {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../images/sprite.png) no-repeat;
+	background-size: 376px 600px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.touchevents .sprite {
+	background: url(../images/sprite@2x.png) no-repeat;
+}
+.arrow_left {
+	background-position: -236px -150px;
+}
+.close {
+	background-position: -118px -390px;
+}
+.aside_menu_toggle {
+	background-position: 0px -150px;
+}
+.wishlist {
+	background-position: -118px -246px;
+}
+.cart {
+	background-position: -118px -198px;
+}
+.plus {
+	background-position: -354px -150px;
+}
+.search_icon {
+	background-position: 0 -102px;
+}
+.barcode {
+	background-position: 0 -582px;
+}
+.share {
+	background-position: -354px -246px;
+}
+.cart_item_del {
+	background-position: -354px -342px;
+}
+
+/* cart */
+.top_links .cart {
+	position: relative;
+}
+.top_links .cart::before {
+	content: attr(date-cart-count);
+	width: 19px;
+	height: 19px;
+	line-height: 19px;
+	text-align: center;
+	font-size: 14px;
+	text-indent: 0;
+	color: #fff;
+	background: #262628;
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+
+/* ------------- 	common ------------- */
+hr {
+	border: none;
+	border-top: 1px solid #F5F5F5;
+	margin: 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
